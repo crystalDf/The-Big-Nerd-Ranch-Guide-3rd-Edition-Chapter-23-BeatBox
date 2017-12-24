@@ -7,11 +7,17 @@
             name="soundViewModel"
             type="com.star.beatbox.SoundViewModel"/>
     </data>
-    <Button
-        android:id="@+id/list_item_sound_button"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:text="@{soundViewModel.title}"
-        android:onClick="@{() -> soundViewModel.onButtonClicked()}"
-        tools:text="Sound name"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <Button
+            android:id="@+id/list_item_sound_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@{soundViewModel.title}"
+            android:onClick="@{() -> soundViewModel.onButtonClicked()}"
+            tools:text="Sound name"/>
+    </FrameLayout>
 </layout>
