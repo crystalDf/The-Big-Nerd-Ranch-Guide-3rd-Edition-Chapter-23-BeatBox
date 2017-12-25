@@ -14,5 +14,4 @@
     <style name="BeatBoxButton" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:background">@drawable/button_beat_box</item>
     </style>
-
 </resources>
